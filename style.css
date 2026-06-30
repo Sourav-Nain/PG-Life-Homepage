@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    height: 65px;
+    display: flex;
+    background-color: rgb(242, 238, 238);
+}
+
+.logo {
+    height: 100%;
+    width: 78%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo1 {
+    height: 90%;
+    width: 15%;
+    background-image: url("logo.png");
+    background-size: cover;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.login {
+    height: 100%;
+    width: 10%;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    color: rgb(82, 77, 77);
+}
+.fa-solid {
+    padding: 8px;
+    font-size: 25px;
+}
+
+.login p {
+    padding: 8px 0px 0px 0px;
+    font-size: 20px;
+}
+
+/* hero section */
+
+.hero-section {
+    height: 450px;
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero-section h2 {
+    color: white;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+}
+
+.input-box input {
+    height: 38px;
+    width: 500px;
+    padding: 6px;
+    font-size: 1rem;
+    border-radius: 4px 0px 0px 4px;
+    border: none;
+}
+
+.search-icon {
+    background-color: rgb(54, 53, 53);
+    font-size: 0.85rem;
+    height: 38px;
+    color: white;
+    border-radius: 0px 4px 4px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading-major {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 1rem;
+    background-color:rgb(242, 238, 238);
+}
+
+.major-cities {
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 0px 0px 30px 20px;
+    background-color: rgb(242, 238, 238);
+}
+
+.cities {
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s ease;
+    align-items: center;    
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+}
+.cities:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+.city-logo{
+    height: 154px;
+    width: 145px;
+    background-size: cover;
+}
+
+/* Footer Part */
+
+.footer-city{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.city{
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(75, 73, 73);
+    color: whitesmoke;
+    height: 60px;
+    width: 25%;
+}
+.complaint{
+    background-color: rgb(75, 73, 73);
+    color: whitesmoke;
+    height: 40px;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+}
+.copyright{
+    background-color: rgb(75, 73, 73);
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+.footer-logo{
+    background-color: rgb(61, 59, 59);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logo1{
+    height: 80%;
+    width: 100px;
+    background-image: url("logo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media only screen and (max-width:951px){
+    .navbar{
+        height: auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 100%;
+    }
+    .logo1{
+        align-content: center;
+        width: 150px;
+        height: 50px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .major-cities{
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .input-box{
+        width: 90%;
+    }
+
+    .input-box input{
+        width: 100%;
+    }
+
+    .search-icon{
+        width: 45px;
+    }
+    .cities{
+        padding: 20px;
+    }
+    .footer-city{
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .city{
+        width: 100%;
+    }
+}

@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 $server="localhost";
 $username="root";
 $password="";
@@ -25,6 +25,7 @@ $result = mysqli_query($conn, $sql);
 
 if($result){
     $message = "Account Created Successfully";
+    
 }
 else{
     $message = "Error: " . mysqli_error($conn);
@@ -57,7 +58,7 @@ mysqli_close($conn);
     <form action="signup.php" method="POST">
         <div class="flex w-[40%] m-auto p-4 text-xl">
             <h1 class="w-[95%] font-serif text-2xl">Signup with PGLife</h1>
-            <a href="index.html"><p><i class="fa-solid fa-x w-[5%] text-gray-500 cursor-pointer" ></i></p></a>
+            <a href="index.php"><p><i class="fa-solid fa-x w-[5%] text-gray-500 cursor-pointer" ></i></p></a>
         </div>
         <div class="flex flex-col m-auto w-[40%] gap-2 h-80">
             <div class="flex border-2 border-gray-400 rounded-md h-[20%]">
@@ -104,7 +105,7 @@ mysqli_close($conn);
         </div>
         <div class="w-[40%]  mx-auto my-4 flex justify-center">
             <p>Already have an Account?</p>
-            <a class="text-blue-700">Login</a>
+            <a href="login.php" class="text-blue-700">Login</a>
         </div>
     </form>
 </body>

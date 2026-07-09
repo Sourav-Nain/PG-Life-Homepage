@@ -1,3 +1,10 @@
+<?php
+$city = "";
+
+if (isset($_GET['city'])) {
+    $city = $_GET['city'];
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,7 +28,7 @@
             </div>
             <div class="login">
                 <i class="fa-solid fa-arrow-right-to-bracket"></i>
-                <p>Login</p>
+                <a href="login.php">Login</a>
             </div>
         </div>
     </header>
@@ -38,25 +45,33 @@
         <h1>Major Cities</h1>
     </div>
     <div class="major-cities">
-        <div class="cities">
-            <div class="city-logo" style="background-image: url('mumbai.png');"></div>
-        </div>
-        <div class="cities">
-            <div class="city-logo" style="background-image: url('delhi.png');"></div>
-        </div>
-        <div class="cities">
-            <div class="city-logo" style="background-image: url('bangalore.png');"></div>
-        </div>
-        <div class="cities">
-            <div class="city-logo" style="background-image: url('chennai.png');"></div>
-        </div>
+        <a href="PG-Life-Property-Listing/index.php?city=Mumbai">
+            <div class="cities">
+                <div class="city-logo" style="background-image: url('mumbai.png');"></div>
+            </div>
+        </a>
+        <a href="PG-Life-Property-Listing/index.php?city=Delhi">
+            <div class="cities">
+                <div class="city-logo" style="background-image: url('delhi.png');"></div>
+            </div>
+        </a>
+        <a href="PG-Life-Property-Listing/index.php?city=Bengaluru">
+            <div class="cities">
+                <div class="city-logo" style="background-image: url('bangalore.png');"></div>
+            </div>
+        </a>
+        <a href="PG-Life-Property-Listing/index.php?city=Chennai">
+            <div class="cities">
+                <div class="city-logo" style="background-image: url('chennai.png');"></div>
+            </div>
+        </a>
     </div>
     <footer>
         <div class="footer-city">
-            <div class="city"><a>PG in Mumbai</a></div>
-            <div class="city"><a>PG in Delhi</a></div>
-            <div class="city"><a>PG in Bengaluru</a></div>
-            <div class="city"><a>PG in Chennai</a></div>
+            <div class="city"><a href="PG-Life-Property-Listing/index.php?city=Mumbai">PG in Mumbai</a></div>
+            <div class="city"><a href="PG-Life-Property-Listing/index.php?city=Delhi">PG in Delhi</a></div>
+            <div class="city"> <a href="PG-Life-Property-Listing/index.php?city=Bengaluru">PG in Bengaluru</a></div>
+            <div class="city"><a href="PG-Life-Property-Listing/index.php?city=Chennai">PG in Chennai</a></div>
         </div>
         <div class="complaint">
             <p>Launch a Complaint</p>

@@ -30,6 +30,7 @@ else{
     $message = "Error: " . mysqli_error($conn);
 }
 }
+mysqli_close($conn);
 
 ?>
 <!DOCTYPE html>

@@ -92,8 +92,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
-
+.fa-magnifying-glass{
+    cursor: pointer;
+}
 .heading-major {
     display: flex;
     align-items: center;

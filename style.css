@@ -18,6 +18,10 @@
     justify-content: flex-start;
     align-items: center;
 }
+.signup .login-link{
+    color: blue;
+    text-decoration: none;
+}
 
 .logo1 {
     height: 90%;
@@ -190,7 +194,7 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
 }
-@media only screen and (max-width:951px){
+@media only screen and (max-width:913px){
     .navbar{
         height: auto;
         flex-direction: column;
@@ -237,5 +241,12 @@ a {
     }
     .city{
         width: 100%;
+    }
+    @media only screen and (max-width: 916px){
+        .major-cities{
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: auto;
+        }
     }
 }

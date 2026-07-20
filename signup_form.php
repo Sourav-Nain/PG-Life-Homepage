@@ -1,5 +1,5 @@
 <form action="signup.php" method="POST">
-      <div class="p-4 text-xl">
+      <div class="p-4 text-xl flex">
         <h1 class="w-[95%] font-serif text-2xl">Signup with PGLife</h1>
         <a href="index.php"
           ><p>

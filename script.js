@@ -1,14 +1,13 @@
 document.getElementById("signupBtn").addEventListener("click", async function () {
     const response = await fetch("signup_form.php");
     const data = await response.text();
+    document.getElementById("popup").style.width ="700px";
     document.getElementById("popup").innerHTML = data;
     document.getElementById("overlay").style.display = "flex";
 });
 
 const loginBtn = document.querySelector("#loginBtn");
 loginBtn.addEventListener("click",async function(e) {
-      e.preventDefault();
-     console.log("Login clicked");
     const response = await fetch("login_form.php");
     const data = await response.text();
     document.getElementById("popup").innerHTML = data;

@@ -85,6 +85,16 @@
     font-size: 1rem;
     border-radius: 4px 0px 0px 4px;
     border: none;
+    outline: none;
+}
+input{
+    outline: none;
+}
+
+input:focus{
+    outline: none;
+    border: none;
+    box-shadow: none;
 }
 
 .search-icon {
@@ -106,7 +116,7 @@
     align-items: center;
     justify-content: center;
     padding: 20px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     background-color:rgb(242, 238, 238);
 }
 
@@ -194,6 +204,9 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+
+
 @media only screen and (max-width:913px){
     .navbar{
         height: auto;
